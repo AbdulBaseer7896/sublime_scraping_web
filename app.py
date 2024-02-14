@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 
 app = Flask(__name__, static_url_path='/static')
 bootstrap = Bootstrap(app)
-
+ 
 def extract_data(page, query_string):
     url = f'https://safer.fmcsa.dot.gov/query.asp?searchtype=ANY&query_type=queryCarrierSnapshot&query_param=MC_MX&query_string={query_string}'
     page.goto(url)
