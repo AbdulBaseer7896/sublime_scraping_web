@@ -271,6 +271,7 @@ def download(csv_path):
     return send_file(csv_path, as_attachment=True, download_name='all_carrier_data.csv')
 
 
+
 @app.route('/details/<query_number>')
 def details(query_number):
     # Add logic to fetch additional details for the specified query_number
